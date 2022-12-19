@@ -10,6 +10,5 @@
 
 void rev_string(char *s)
 {
-	int i;
-	int len = strlen(s);
+	_putchar('N');
 }
