@@ -10,5 +10,12 @@
 
 void rev_string(char *s)
 {
-	_putchar('N');
+	int i = 0;
+	int count = strlen(s);
+
+	while (i < count)
+	{
+		_putchar(s[i]);
+		i++;
+	}
 }
