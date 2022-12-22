@@ -13,12 +13,9 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int len = strlen(dest);
+	int len2 = strlen(src);
 	int i = 0;
 
-	while (i < n && i < strlen(src))
-	{
-		*(dest + len + i) = src[i];
-		i++;
-	}
+	printf("%d %d %d", len, len2, i);
 	return (dest);
 }
