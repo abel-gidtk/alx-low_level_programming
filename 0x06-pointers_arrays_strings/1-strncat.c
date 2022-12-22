@@ -12,6 +12,7 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
+	int i = 0;
 	int len1 = strlen(dest);
 	int len2 = strlen(src);
 
