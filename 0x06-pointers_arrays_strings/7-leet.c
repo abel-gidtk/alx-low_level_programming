@@ -12,19 +12,17 @@ char *leet(char *s)
 {
 	int len = strlen(s);
 	int i = 0;
+	int j;
 
 	while (i < len)
 	{
-		if (s[i] == 'a' || s[i] == 'A')
-			s[i] = 52;
-		else if (s[i] == 'e' || s[i] == 'E')
-			s[i] = 51;
-		else if (s[i] == 'o' || s[i] == 'O')
-			s[i] = 48;
-		else if (s[i] == 't' || s[i] == 'T')
-			s[i] = 55;
-		else if (s[i] == 'l' || s[i] == 'L')
-			s[i] = 49;
+		j = 0;
+		while (j < 10)
+		{
+			if (s[i] == "aAeEoOtTlL"[j])
+				s[i] = "4433007711"[j];
+			j++;
+		}
 		i++;
 	}
 	return (s);
