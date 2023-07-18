@@ -61,7 +61,9 @@ void print_to_98(int n)
 			{
 				posN = -n;
 				_putchar(45);
-				if (posN > 9)
+				if (posN > 99)
+					convert_three_digit(posN);
+				else if (posN > 9 && posN <= 99)
 					convert_two_digit(posN);
 				else
 					_putchar('0' + posN);
