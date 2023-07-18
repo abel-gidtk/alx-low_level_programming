@@ -51,7 +51,7 @@ void convert_two_digit(int num)
  */
 void print_to_98(int n)
 {
-	int hundreds, tens, ones, posN;
+	int posN;
 
 	if (n <= 98)
 	{
