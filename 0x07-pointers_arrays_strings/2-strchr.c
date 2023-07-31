@@ -10,19 +10,15 @@
  */
 char *_strchr(char *s, char c)
 {
-	char *ptr = NULL;
-	int i = 0;
-
-	if (s == NULL)
-		return (NULL);
-	while (s[i] != '\0')
+	while (*s)
 	{
-		if (s[i] == c)
-		{
-			ptr = &s[i];
-			break;
-		}
-		i++;
+		if (*s != c)
+			s++;
+		else
+			return (s);
 	}
-	return (ptr);
+	if (c == '\0')
+		return (s);
+
+	return (NULL);
 }
