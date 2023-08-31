@@ -11,7 +11,7 @@ void print_binary(unsigned long int n)
 	unsigned long int mask;
 	int print = 0;
 
-	for (mask = 0x80000000000; mask != 0; mask >>= 1)
+	for (mask = 0x8000000000000000; mask != 0; mask >>= 1)
 	{
 		if (mask & n)
 		{
