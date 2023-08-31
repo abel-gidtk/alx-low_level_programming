@@ -64,7 +64,7 @@ void add_last(listint_t **h, listint_t *n)
 	temp->next = n;
 }
 /**
- * insert_nodeint_at_index - Inserts node at index.
+ * insert_nodeint_at_index - Inserts node at index
  * @head: Pointer to head
  * @idx: Index
  * @n: Integer value of node
